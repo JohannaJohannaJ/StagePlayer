@@ -1,6 +1,6 @@
 package se.stageplayer;
 
-import android.app.*;import android.os.*;import android.content.*;import android.graphics.Color;import android.media.MediaPlayer;import android.net.Uri;import android.provider.OpenableColumns;import android.view.*;import android.widget.*;import org.json.*;import java.io.*;import java.nio.charset.StandardCharsets;import java.util.*;
+import android.app.*;import android.os.*;import android.content.*;import android.graphics.Color;import android.media.MediaPlayer;import android.net.Uri;import android.provider.OpenableColumns;import android.view.*;import android.widget.*;import org.json.*;import java.io.*;import java.nio.charset.StandardCharsets;import java.util.*;import android.database.Cursor;
 
 public class MainActivity extends Activity {
  static final int AUDIO=10,TEXT=11; TextView title,track,textView,playlistLabel,stageState,nextTrack; ScrollView textScroll; SeekBar seek; Button play,stop,prev,next,manage,imp,attach,show,stage,fontDown,fontUp,resetScroll,stageExit; Switch autoNext; LinearLayout topbar,mainLayout,textTools,transport; MediaPlayer mp; Handler h=new Handler(Looper.getMainLooper());
